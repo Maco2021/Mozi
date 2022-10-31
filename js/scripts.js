@@ -60,16 +60,15 @@ window.addEventListener('scroll', fixedNav)
 // Main page Scripts
 
 if (document.querySelector('.main__body')) {
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.swiper__innovation', {
 
         // Navigation arrows
         navigation: {
-            nextEl: '.swiper__arrows-prev',
-            prevEl: '.swiper__arrows-next',
+            nextEl: '.swiper__arrow-next',
+            prevEl: '.swiper__arrow-prev',
         },
 
         //Responsive breakpoints
-
         breakpoints: {
             // when window width is ⩾ 320px
             320: {
@@ -91,13 +90,10 @@ if (document.querySelector('.main__body')) {
                 slidesPerView: 3.2,
                 spaceBetween: 30,
             },
-            // when window width is ⩾ 1000px
-            1000: {
-                slidesPerView: 4,
-                spaceBetween: 30,
-            },
         },
     })
 }
+
+
 
 

@@ -413,6 +413,10 @@ nav {
   background: linear-gradient(268.52deg, #E3E7F6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
 }
 
+.section__info.section__info-products {
+  background: #ffffff;
+}
+
 .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -424,6 +428,13 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   gap: 50px;
+}
+
+.info.info__reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .info__item {
@@ -557,6 +568,31 @@ footer {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+}
+
+.section__question {
+  padding: 136px 0;
+  background: -o-linear-gradient(107.88deg, #E3E7F6 -6.53%, rgba(227, 231, 246, 0) 87.81%);
+  background: linear-gradient(342.12deg, #E3E7F6 -6.53%, rgba(227, 231, 246, 0) 87.81%);
+}
+
+.question {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.question__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.question__btn {
+  margin-top: 40px;
 }
 
 .section__products {
@@ -1726,7 +1762,7 @@ button.swiper-pagination-bullet {
         flex-wrap: wrap;
   }
 
-  .info__item img {
+  .info__item .info__img {
     max-width: 100%;
     width: 100%;
     height: auto;
@@ -1832,9 +1868,8 @@ button.swiper-pagination-bullet {
     text-align: center;
   }
 
-  .info__item img {
+  .info__item .info__img {
     max-width: 450px;
-    margin-top: 35px;
   }
 
   .footer {
@@ -2092,6 +2127,24 @@ button.swiper-pagination-bullet {
   }
 
   .footer__copy-item:last-child {
+    margin-top: 10px;
+  }
+
+  .question__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+
+  .question__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 10px;
   }
 }

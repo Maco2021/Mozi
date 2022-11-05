@@ -452,6 +452,10 @@ nav {
   background: #ffffff;
 }
 
+.section__info.section__info-about {
+  background: transparent;
+}
+
 .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -480,6 +484,24 @@ nav {
 
 .info__btn {
   margin-top: 30px;
+}
+
+.info__btn.info__btn-relative {
+  position: relative;
+}
+
+.info__btn.info__btn-relative:hover .path {
+  fill: #BF0830;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.info__btn.info__btn-relative .button__img {
+  position: absolute;
+  right: -60%;
+  bottom: -130%;
+  pointer-events: none;
 }
 
 footer {
@@ -632,7 +654,7 @@ footer {
 
 .section__pluses {
   padding-top: 65px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .pluses {
@@ -1768,6 +1790,15 @@ button.swiper-pagination-bullet {
     right: 30px;
   }
 
+  .pluses {
+    margin-top: 50px;
+    gap: 30px;
+  }
+
+  .pluses__item {
+    padding: 30px;
+  }
+
   .products__item {
     margin-top: 50px;
   }
@@ -1961,6 +1992,22 @@ button.swiper-pagination-bullet {
     height: auto;
   }
 
+  .pluses {
+    gap: 20px;
+  }
+
+  .pluses__item {
+    padding: 30px;
+  }
+
+  .pluses__item-title {
+    font-size: 24px;
+  }
+
+  .pluses__item-text {
+    margin-top: 20px;
+  }
+
   .products__item-logo img {
     max-width: 150px;
   }
@@ -2099,6 +2146,10 @@ button.swiper-pagination-bullet {
 
   .info__item .info__img {
     max-width: 450px;
+  }
+
+  .info__btn.info__btn-relative {
+    margin-bottom: 25px;
   }
 
   .footer {
@@ -2351,6 +2402,14 @@ button.swiper-pagination-bullet {
     margin-left: 0;
   }
 
+  .info__btn.info__btn-relative {
+    margin-bottom: 0;
+  }
+
+  .info__btn.info__btn-relative .button__img {
+    display: none;
+  }
+
   .footer__lists-item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
@@ -2384,6 +2443,12 @@ button.swiper-pagination-bullet {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 10px;
+  }
+
+  .pluses__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
   }
 
   .stats__item {

@@ -258,7 +258,7 @@ nav {
 }
 
 .section__hero .hero__item {
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .section__hero.section__hero-products {
@@ -293,16 +293,15 @@ nav {
 }
 
 .hero__item-title {
+  font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 62px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: #1A2578;
+}
+
+.hero__item-title span {
+  color: red;
 }
 
 .hero__item-text {
@@ -374,7 +373,7 @@ nav {
 }
 
 .section__hero .hero__item {
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .section__hero.section__hero-products {
@@ -409,16 +408,15 @@ nav {
 }
 
 .hero__item-title {
+  font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 62px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: #1A2578;
+}
+
+.hero__item-title span {
+  color: red;
 }
 
 .hero__item-text {
@@ -688,13 +686,17 @@ footer {
 .pluses__item-title {
   font-size: 28px;
   line-height: 31px;
+  color: #3A3A3C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #3A3A3C;
+}
+
+.pluses__item-title .plus__icon {
+  margin-right: 10px;
 }
 
 .pluses__item-text {
@@ -1887,6 +1889,7 @@ button.swiper-pagination-bullet {
   .hero__item-title {
     font-size: 38px;
     line-height: 48px;
+    text-align: center;
   }
 
   .hero__item-text {
@@ -1965,6 +1968,7 @@ button.swiper-pagination-bullet {
   .hero__item-title {
     font-size: 38px;
     line-height: 48px;
+    text-align: center;
   }
 
   .hero__item-text {
@@ -2380,6 +2384,11 @@ button.swiper-pagination-bullet {
     margin-left: 0;
   }
 
+  .hero .career__btn {
+    text-align: center;
+    margin-top: 10px;
+  }
+
   .hero__item-buttons {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2400,6 +2409,11 @@ button.swiper-pagination-bullet {
 
   .hero__btn:last-child {
     margin-left: 0;
+  }
+
+  .hero .career__btn {
+    text-align: center;
+    margin-top: 10px;
   }
 
   .info__btn.info__btn-relative {

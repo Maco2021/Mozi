@@ -626,14 +626,21 @@ footer {
 }
 
 .section__question {
-  padding: 136px 0;
+  padding: 136px 0px;
   background: -o-linear-gradient(107.88deg, #E3E7F6 -6.53%, rgba(227, 231, 246, 0) 87.81%);
   background: linear-gradient(342.12deg, #E3E7F6 -6.53%, rgba(227, 231, 246, 0) 87.81%);
+}
+
+.section.section__question-career .question {
+  max-width: 750px;
+  width: 100%;
 }
 
 .question {
   max-width: 600px;
   margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 126px;
 }
 
 .question__buttons {
@@ -1114,12 +1121,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.jobs__item-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .jobs__title {
@@ -2331,6 +2332,24 @@ button.swiper-pagination-bullet {
   .recommendation__item-rating--stars svg {
     width: 20px;
   }
+
+  .jobs__item {
+    padding: 25px 35px;
+    margin-top: 20px;
+  }
+
+  .jobs__title {
+    font-size: 22px;
+  }
+
+  .jobs__info {
+    margin-top: 15px;
+  }
+
+  .jobs__btn {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -2568,6 +2587,22 @@ button.swiper-pagination-bullet {
 
   .recommendation__item-link {
     margin-top: 0;
+  }
+
+  .jobs {
+    margin-top: 50px;
+  }
+
+  .jobs__item {
+    padding: 15px 25px;
+  }
+
+  .jobs__title {
+    font-size: 20px;
+  }
+
+  .jobs__info-icon img {
+    width: 15px;
   }
 }
 
@@ -2854,5 +2889,41 @@ button.swiper-pagination-bullet {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+  }
+
+  .jobs__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .jobs__title {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .jobs__info {
+    margin-top: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+
+  .jobs__btn {
+    margin-top: 10px;
+  }
+
+  .jobs__item-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
   }
 }
